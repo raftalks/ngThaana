@@ -1,0 +1,26 @@
+{
+  "name": "ngThaana",
+  "version": "1.0.0",
+  "description": "Thaana Input Keyboard Directive",
+  "main": "thaana.angular.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raftalks/ngThaana.git"
+  },
+  "keywords": [
+    "thaana",
+    "angularjs"
+  ],
+  "author": "Rahmathullah (Raftalks)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raftalks/ngThaana/issues"
+  },
+  "homepage": "https://github.com/raftalks/ngThaana",
+  "devDependencies": {
+    "grunt": "~0.4.2"
+  }
+}
