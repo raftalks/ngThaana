@@ -1,0 +1,27 @@
+{
+  "name": "ngThaana",
+  "version": "1.0.0",
+  "authors": [
+    "Raftalks <raftalks@gmail.com>"
+  ],
+  "description": "Thaana keyboard for Angularjs Projects",
+  "main": "thaana.angular.js",
+  "keywords": [
+    "thaana",
+    "angular"
+  ],
+  "license": "ISC",
+  "homepage": "http://github.com/raftalks/ngThaana",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angularjs": "*",
+    "angular-mocks": "~1.2.10",
+    "jquery": "~2.1.0"
+  }
+}
