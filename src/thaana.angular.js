@@ -129,8 +129,10 @@
             }, function (state) {
                 if(state) {
                      element.addClass('thaana');
+                     element.attr('dir', 'rtl');
                 } else {
                      element.removeClass('thaana');
+                      element.removeAttr('dir');
                 }
             });
 
