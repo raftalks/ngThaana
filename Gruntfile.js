@@ -35,7 +35,7 @@ module.exports = function(grunt) {
                 },
             dist: {
                 
-                src: ['bower_components/DOM-Keyboard-Event-Level-3-polyfill/DOMEventsLevel3.shim.js', 'src/thaana.angular.js'],
+                src: ['src/**/*.js'],
                 dest: 'dist/thaana.angular.js'
                 
             }
