@@ -35,7 +35,7 @@ module.exports = function(grunt) {
                 },
             dist: {
                 
-                src: ['src/thaana.angular.js'],
+                src: ['bower_components/DOM-Keyboard-Event-Level-3-polyfill/DOMEventsLevel3.shim.js', 'src/thaana.angular.js'],
                 dest: 'dist/thaana.angular.js'
                 
             }
@@ -59,7 +59,7 @@ module.exports = function(grunt) {
             unit: {
                 configFile: 'karma.conf.js',
                 background: true,
-                browsers: ['PhantomJS']
+                browsers: ['Chrome']
             },
 
             continious: {
@@ -87,7 +87,7 @@ module.exports = function(grunt) {
 
 
 
-    grunt.registerTask('testmode', ['karma:unit', 'watch:karma']);
+    grunt.registerTask('testmode', ['build','karma:unit', 'watch:karma']);
 
     grunt.registerTask('testci', ['karma:continious', 'watch']);
 

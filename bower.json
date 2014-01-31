@@ -22,6 +22,7 @@
   "devDependencies": {
     "angularjs": "*",
     "angular-mocks": "~1.2.10",
-    "jquery": "~2.1.0"
+    "jquery": "~2.1.0",
+    "DOM-Keyboard-Event-Level-3-polyfill": "git@github.com:raftalks/DOM-Keyboard-Event-Level-3-polyfill.git"
   }
 }
