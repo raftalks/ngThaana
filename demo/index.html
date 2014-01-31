@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app='myApp'>
+<head>
+    <title>Demo</title>
+    <script type="text/javascript" src='dist/jquery/jquery.js'></script>
+    <script type="text/javascript" src='dist/angular/angular.js'></script>
+    <script type="text/javascript" src='dist/bililiteRange.js'></script>
+    <script type="text/javascript" src='dist/sendkey.js'></script>
+   
+</head>
+<body>
+
+    <h1>Thaana Keyboard Demo</h1>
+    <input type="text" ng-model="textinput" ng-thaana />
+    {{ textinput }}
+
+    <script type="text/javascript" src='dist/thaana.angular.js'></script>
+    <script type="text/javascript">
+
+        angular.module('myApp', ['thaana.angular'])
+
+        .controller('mainCtrl', function($scope, ngThaana) {
+          
+          $scope.textinput = '';
+          
+          ngThaana.config('activated', true);
+          
+        });
+
+    </script>
+</body>
+</html>
