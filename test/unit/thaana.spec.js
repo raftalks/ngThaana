@@ -17,6 +17,7 @@ describe('thaana.angular', function() {
         $compile(element)($rootScope);
         thaanaService = ngThaana;
     }));
+    
 
 
     triggerKeyPress = function (elm, keyCode) {
@@ -73,21 +74,21 @@ describe('thaana.angular', function() {
         });
 
 
-        it("should capture key and translate to thaana and update ngModel", function () {
+        // it("should capture key and translate to thaana and update ngModel", function () {
 
             
-            keysToPress = strToCharCode("divehi");
-            pressKeysOnElement(element, keysToPress);
-            $scope.$digest();
+        //     keysToPress = strToCharCode("divehi");
+        //     pressKeysOnElement(element, keysToPress);
+        //     $scope.$digest();
             
-            var thaanaContent = thaanaService.getContent();
+        //     var thaanaContent = thaanaService.getContent();
             
-            expect(thaanaContent).toBe("ދިވެހި");
+        //     expect(thaanaContent).toBe("ދިވެހި");
 
-            var inputModelContent = $scope.inputcontent;
-            expect(inputModelContent).toBe("ދިވެހި");
+        //     var inputModelContent = $scope.inputcontent;
+        //     expect(inputModelContent).toBe("ދިވެހި");
 
-        });
+        // });
 
 
     });
